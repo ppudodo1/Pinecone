@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "A",
+    "parent_node_id": null,
+    "ordering": 1
+  },
+  {
+    "id": 2,
+    "title": "B",
+    "parent_node_id": 1,
+    "ordering": 1
+  },
+  {
+    "id": 3,
+    "title": "C",
+    "parent_node_id": 1,
+    "ordering": 2
+  },
+  {
+    "id": 4,
+    "title": "D",
+    "parent_node_id": 2,
+    "ordering": 1
+  },
+  {
+    "id": 5,
+    "title": "E",
+    "parent_node_id": 2,
+    "ordering": 2
+  },
+  {
+    "id": 6,
+    "title": "F",
+    "parent_node_id": 3,
+    "ordering": 2
+  },
+  {
+    "id": 7,
+    "title": "G",
+    "parent_node_id": 1,
+    "ordering": 1
+  },
+  {
+    "id": 8,
+    "title": "F",
+    "parent_node_id": 2,
+    "ordering": 1
+  },
+  {
+    "id": 9,
+    "title": "H",
+    "parent_node_id": 8,
+    "ordering": 1
+  }
+]
