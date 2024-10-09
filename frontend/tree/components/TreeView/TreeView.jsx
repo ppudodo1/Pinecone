@@ -9,7 +9,7 @@ const TreeView = () => {
   const buildTree = (nodes) => {
     const map = new Map();
     const tree = [];
-    nodes.forEach((element, index) => {
+    nodes.forEach((element) => {
       map[element.id] = { ...element, children: [] };
     });
     nodes.forEach((node) => {
@@ -25,12 +25,10 @@ const TreeView = () => {
     const res = await axios.get("http://localhost:4000/nodes/");
     const newData = res.data;
     const tree = buildTree(newData);
-    console.log(tree);
     setNodes(tree);
   };
   useEffect(() => {
     fetchData();
-    //console.log(nodes);
   }, []);
   if (nodes == undefined || nodes == null) {
     return <h1>Loading...</h1>;

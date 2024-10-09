@@ -28,7 +28,6 @@ const TreeNode = ({ node }) => {
   const moveNode = async (e, parentId) => {
     e.stopPropagation();
     let id = localStorage.getItem("nodeId");
-    console.log("Parent id", parentId);
     const res = await axios.put(
       `http://localhost:4000/nodes/transferNode/${id}/${parentId}`
     );
@@ -36,7 +35,7 @@ const TreeNode = ({ node }) => {
   };
   const startDrag = (e, nodeId) => {
     e.stopPropagation();
-    console.log(node.id);
+
     localStorage.setItem("nodeId", node.id);
   };
   const allowDrop = (e) => {
