@@ -73,7 +73,6 @@ app.delete("/nodes/delete/:id", (req, res) => {
   });
 
   indexesToDelete.sort((a, b) => b - a);
-  console.log(indexesToDelete);
   indexesToDelete.forEach((index) => {
     nodes.splice(index, 1);
   });
