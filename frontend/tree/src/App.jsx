@@ -1,6 +1,4 @@
-import { useState } from "react";
 import "./App.css";
-import axios from "axios";
 import TreeView from "../components/TreeView/TreeView";
 
 function App() {
